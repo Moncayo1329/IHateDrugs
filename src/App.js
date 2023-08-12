@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Menu from './Menu';
+import Header from './header'; // Corregido el nombre a "Header"
+import Search from './search'; // Cambiado "search" por "Search"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Header /> {/* Usar el componente Header */}
       </header>
+      <Menu />
+      <Search /> {/* Usar el componente Search */}
     </div>
   );
 }
 
 export default App;
+
